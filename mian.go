@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github/chatModelToADK/moe"
 	"log"
 
 	"github.com/joho/godotenv"
@@ -113,6 +112,6 @@ func main() {
 		使用moe进行专家模型编排调用
 	*/
 
-	println("=============================moe.BuildMOE=============================")
-	moe.BuildMOE()
+	//println("=============================moe.BuildMOE=============================")
+	//moe.BuildMOE()
 }

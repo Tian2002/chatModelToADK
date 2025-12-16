@@ -98,3 +98,24 @@ User: 请帮我{task}
 - ADK编排是一个综合性的自动化编排开发工具包。
 - 它集成了上述所有组件，提供一个完整的解决方案，用于构建复杂的LLM应用。
 - ADK编排支持灵活的配置和扩展，适应各种应用场景。
+- 通过ADK编排，开发者可以轻松地创建、管理和优化LLM应用，实现自动化的任务处理和决策支持。
+- 示例里面展示了ChatModelAgent、WorkflowAgents、Multi-Agent多种ADK编排方式。
+
+### 各种ADK编排简单介绍
+- ChatModelAgent是 ADK 中最重要的预构建组件，它封装了与大语言模型的交互逻辑，实现了经典的 ReAct（Reason-Act-Observe）模式
+![adk-chatModelAgent](static/adk-chatModelAgent.png)
+- WorkflowAgents 模式用于通过预定义逻辑管理 Agent 的运行方式，产生确定的执行过程，协助实现可预测可控制的多 Agent 协作方式。
+
+顺序执行
+
+![adk-workflowAgents-sequential](static/adk-workflowAgents-sequential.png)
+
+并发执行
+
+![adk-workflowAgents-parallel](static/adk-workflowAgents-parallel.png)
+
+循环执行
+
+![adk-workflowAgents-loop](static/adk-workflowAgents-loop.png)
+
+- Multi-Agent 是 ADK 中的一种重要编排方式，允许多个 Agent 协同工作以完成复杂任务。每个 Agent 可以专注于特定的子任务，通过协作实现整体目标。
