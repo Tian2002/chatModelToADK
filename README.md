@@ -77,19 +77,21 @@ User: 请帮我{task}
 - 图式编排可以更清晰地表达任务的依赖关系和执行顺序。
 ![graph](static/graph.png)
 - 这是使用eino-dev图式编排可视化工具创建的一个简单图式编排示例截图
-![eino-dev-graph.png](static/eino-dev-graph.png)  
+![eino-dev-graph](static/eino-dev-graph.png)  
 
 
 ## 7. ReAct编排
 - ReAct编排根据输入的变化动态调整处理流程。
 - 思考（Reason）和行动（Act）
 - 它能够根据上下文和环境的变化，灵活地选择不同的处理路径。
-![reAct.png](static/reAct.png)
+![reAct](static/reAct.png)
 
 
 ## 8. 多专家系统（MoE）编排
 - MoE编排结合了多个专家模型，每个模型专注于特定领域。
 - 根据输入的特性，动态选择最合适的专家模型进行处理。
+- 代码示例以病人看诊为例，包含了多个专家模型（如心脏病专家、皮肤病专家等），根据病人的症状动态选择合适的专家进行诊断。
+![moe](static/moe.png)
 
 
 ## 9. ADK编排
