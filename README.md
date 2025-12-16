@@ -9,7 +9,7 @@
 ## 1. ChatModel
 - ChatModel是与大型语言模型（LLM）交互的基础组件。
 - 它封装了与LLM通信的逻辑，处理输入输出。
-- 就像一张会说话的 GPU 卡，你喂字符，它回字符，别的啥也不会，先让它‘开口’，再谈别的任务。
+- 就像一张会说话的 GPU 卡，你喂字符，它回字符，别的啥也不会，先让它‘开口’，再谈别的任务。 
 - 示例curl：
 ```bash
 curl https://ark.cn-beijing.volces.com/api/v3/chat/completions \
@@ -76,11 +76,15 @@ User: 请帮我{task}
 - 这种方式允许更复杂的流程控制和并行处理。
 - 图式编排可以更清晰地表达任务的依赖关系和执行顺序。
 ![graph](static/graph.png)
+- 这是使用eino-dev图式编排可视化工具创建的一个简单图式编排示例截图
+![eino-dev-graph.png](static/eino-dev-graph.png)  
 
 
 ## 7. ReAct编排
 - ReAct编排根据输入的变化动态调整处理流程。
+- 思考（Reason）和行动（Act）
 - 它能够根据上下文和环境的变化，灵活地选择不同的处理路径。
+![reAct.png](static/reAct.png)
 
 
 ## 8. 多专家系统（MoE）编排

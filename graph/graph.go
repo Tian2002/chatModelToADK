@@ -3,12 +3,13 @@ package graph
 import (
 	"context"
 	"fmt"
+	"os"
+
 	"github.com/cloudwego/eino-ext/components/model/ark"
 	"github.com/cloudwego/eino/callbacks"
 	"github.com/cloudwego/eino/components/prompt"
 	"github.com/cloudwego/eino/compose"
 	"github.com/cloudwego/eino/schema"
-	"os"
 )
 
 func CallGraph() {
@@ -125,7 +126,7 @@ func CallGraph() {
 	//执行图
 	result, err := runner.Invoke(ctx, "我今天很累",
 		compose.WithCallbacks(callbacks.NewHandlerBuilder(). //切面注入回调
-			OnStartFn(func(ctx context.Context, info *callbacks.RunInfo, input callbacks.CallbackInput) context.Context {
+									OnStartFn(func(ctx context.Context, info *callbacks.RunInfo, input callbacks.CallbackInput) context.Context {
 				println(info.Name, "执行开始，输入：", fmt.Sprint(input))
 				return ctx
 			}).
@@ -138,5 +139,4 @@ func CallGraph() {
 		panic(err)
 	}
 	println("最终结果:", result)
-
 }

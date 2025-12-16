@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github/chatModelToADK/graph"
+	"github/chatModelToADK/moe"
 	"log"
 
 	"github.com/joho/godotenv"
@@ -99,6 +99,20 @@ func main() {
 		使用 graph 进行图结构调用
 	*/
 
-	println("=============================graph.CallGraph=============================")
-	graph.CallGraph()
+	//println("=============================graph.CallGraph=============================")
+	//graph.CallGraph()
+
+	/*
+		使用reAct进行ReAct编排调用
+	*/
+
+	//println("=============================graph.OrcGraphWithState=============================")
+	//reAct.BuildReAct()
+
+	/*
+		使用moe进行专家模型编排调用
+	*/
+
+	println("=============================moe.BuildMOE=============================")
+	moe.BuildMOE()
 }
