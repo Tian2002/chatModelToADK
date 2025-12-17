@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github/chatModelToADK/adk"
 	"log"
 
 	"github.com/joho/godotenv"
@@ -114,4 +115,14 @@ func main() {
 
 	//println("=============================moe.BuildMOE=============================")
 	//moe.BuildMOE()
+
+	/*
+		进行ADK编排调用
+	*/
+
+	//println("=============================chatModelAgent.ChatModelAgent=============================")
+	//adk.ChatModelAgent()
+
+	println("=============================workflowAgent.WorkflowAgent=============================")
+	adk.WorkflowAgent()
 }
